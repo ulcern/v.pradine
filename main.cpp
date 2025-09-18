@@ -11,7 +11,6 @@ using std::vector;
 using std::setw;
 using std::left;
 using std::right;
-using std::fixed;
 using std::setprecision;
 
 struct Studentas{
@@ -28,14 +27,11 @@ Studentas Stud_kiek(){
     cout<<"Ivesk studento duomenis"<<endl;
     cout<<"Vardas: ";
     cin>>Pirmas.vardas;
-
     cout<<"Pavarde: ";
     cin>>Pirmas.pavarde;
-
     cout<<"Kiek pazymiu turi studentas: "<<Pirmas.vardas<<" "<<Pirmas.pavarde<<"? ";
     cin>>n;
-
-    for(int a=0; a<n; ++a) {
+    for(int a=0; a<n; ++a){
         cout<<a+1<<": ";
         cin>>laik_paz;
         Pirmas.pazymys.push_back(laik_paz);
@@ -43,7 +39,6 @@ Studentas Stud_kiek(){
     }
     cout<<"Galutinis egzamino pazymys: ";
     cin>>Pirmas.egzaminas;
-
     Pirmas.galutinis=(double)sum/(double)n*0.4+Pirmas.egzaminas*0.6;
     return Pirmas;
 }
@@ -58,9 +53,9 @@ int main(){
     for(int i=0; i<kiek; ++i)grupe.push_back(Stud_kiek());
     cout<<endl<<"Rezultatai:"<<endl;
     cout<<"----------------------------------------"<<endl;
-    cout<<setw(10)<<left<<"Pavarde"<<setw(10)<<left<<"Vardas"<<setw(10)<<left<<"Galutinis (vid.)"<<endl;
+    cout<<setw(10)<<left<<"Pavarde"<<setw(10)<<left<<"Vardas"<<setw(10)<<left<<"Galutinis(vid.)"<<endl;
     cout<<"----------------------------------------"<<endl;
-    for(const auto&s:grupe)
-        cout<<setw(10)<<left<<s.pavarde<<setw(10)<<left<<s.vardas<<setw(10)<<left<<fixed<<setprecision(2)<<s.galutinis<<endl;
+    for(const auto& s:grupe)
+        cout<<setw(10)<<left<<s.pavarde<<setw(10)<<left<<s.vardas<<setw(10)<<left<<setprecision(2)<<s.galutinis<<endl;
     return 0;
 }
