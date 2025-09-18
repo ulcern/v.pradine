@@ -35,5 +35,8 @@ int main (){
     cin>>Pirmas.pavarde;
     cout<<"Kiek pazymiu turi studentas: "<<Pirmas.vardas<<" "<<Pirmas.pavarde<<"? ";
     cin>>n;
+
+    for 
 }
+
 
