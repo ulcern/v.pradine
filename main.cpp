@@ -1,3 +1,5 @@
+#include "my.h"
+
 int main(){
     cout<<"Studento pazymiai"<<endl;
     int kiek;
@@ -24,3 +26,4 @@ int main(){
     
     return 0;
 }
+
