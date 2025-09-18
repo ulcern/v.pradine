@@ -1,3 +1,6 @@
+#ifndef my_h
+#define my_h
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -44,4 +47,5 @@ Studentas Stud_kiek(){
     Pirmas.galutinis=(double)sum/(double)n*0.4+Pirmas.egzaminas*0.6;
     return Pirmas;
 }
+#endif 
 
