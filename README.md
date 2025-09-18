@@ -1,2 +1,2 @@
-# v.pradine
+# 1 užduotis
 Objektinio programavimo 1 užduotis
